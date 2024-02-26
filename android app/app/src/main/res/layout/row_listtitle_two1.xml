@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:tools="http://schemas.android.com/tools">
+    <data>
+        <variable name="listtitleTwo1RowModel" type="com.happytails.app.modules.rewardverification.data.model.ListtitleTwo1RowModel"/>
+    </data>
+    <LinearLayout android:id="@+id/linearCardHorizontal"
+        android:layout_height="wrap_content"
+        android:layout_width="match_parent"
+        android:orientation="horizontal" style="@style/groupStylewhite_9">
+        <TextView android:ellipsize="end" android:id="@+id/txtTitleTwo"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="@dimen/_16pxv"
+            android:layout_marginStart="@dimen/_16pxh"
+            android:layout_marginTop="@dimen/_19pxv"
+            android:layout_weight="0.77" android:layout_width="0dp"
+            android:lineSpacingExtra="@dimen/_6pxh"
+            android:singleLine="true"
+            android:text="@{listtitleTwo1RowModel.txtTitleTwo}"
+            style="@style/txtNotoSansnotosanssemibold14" tools:text="@string/msg_thank_you_for_s2"/>
+        <LinearLayout android:id="@+id/linearRowsmalltext"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="@dimen/_13pxv"
+            android:layout_marginEnd="@dimen/_16pxh"
+            android:layout_marginStart="@dimen/_75pxh"
+            android:layout_marginTop="@dimen/_14pxv"
+            android:layout_weight="0.23" android:layout_width="0dp" android:orientation="horizontal">
+            <TextView android:ellipsize="end"
+                android:id="@+id/txtSmallText"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="@dimen/_2pxv"
+                android:layout_marginTop="@dimen/_8pxv"
+                android:layout_weight="0.29" android:layout_width="0dp"
+                android:lineSpacingExtra="@dimen/_5pxh"
+                android:singleLine="true"
+                android:text="@{listtitleTwo1RowModel.txtSmallText}"
+                style="@style/txtNotoSansnotosansregular12_3" tools:text="@string/lbl_rs"/>
+            <TextView android:ellipsize="end"
+                android:id="@+id/txtBigText"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="@dimen/_2pxh"
+                android:layout_weight="0.71" android:layout_width="0dp"
+                android:lineSpacingExtra="@dimen/_8pxh"
+                android:singleLine="true"
+                android:text="@{listtitleTwo1RowModel.txtBigText}"
+                style="@style/txtNotoSansnotosanssemibold20_1" tools:text="@string/lbl_100"/>
+        </LinearLayout>
+    </LinearLayout>
+</layout>

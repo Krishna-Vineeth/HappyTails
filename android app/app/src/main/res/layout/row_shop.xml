@@ -1,0 +1,88 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:tools="http://schemas.android.com/tools">
+    <data>
+        <variable name="shopRowModel" type="com.happytails.app.modules.shop.data.model.ShopRowModel"/>
+    </data>
+    <LinearLayout android:gravity="start"
+        android:id="@+id/linearColumnpets"
+        android:layout_height="wrap_content"
+        android:layout_width="wrap_content" android:orientation="vertical">
+        <LinearLayout android:gravity="center_horizontal"
+            android:id="@+id/linearPetShop1"
+            android:layout_height="wrap_content"
+            android:layout_width="match_parent"
+            android:orientation="vertical" style="@style/groupStyle">
+            <FrameLayout android:id="@+id/frameStackpets"
+                android:layout_gravity="start"
+                android:layout_height="@dimen/_173pxv"
+                android:layout_width="@dimen/_154pxh" style="@style/groupStylelight_blue_300_cccornerRadius">
+                <ImageView android:id="@+id/imageImage"
+                    android:layout_gravity="center"
+                    android:layout_height="@dimen/_157pxh"
+                    android:layout_marginHorizontal="@dimen/_8pxh"
+                    android:layout_marginVertical="@dimen/_8pxv"
+                    android:layout_width="@dimen/_138pxh"
+                    android:scaleType="fitXY"
+                    cornerRadius="@{@dimen/_16pxh}"
+                    imageRes="@{@drawable/img_image_157x138}"
+                    tools:ignore="ContentDescription" tools:src="@drawable/img_image_157x138"/>
+                <androidx.appcompat.widget.AppCompatButton
+                    android:ellipsize="end" android:gravity="center"
+                    android:id="@+id/btnPets"
+                    android:layout_gravity="top|start"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="@dimen/_23pxv"
+                    android:layout_marginEnd="@dimen/_10pxh"
+                    android:layout_marginTop="@dimen/_23pxv"
+                    android:layout_width="match_parent"
+                    android:paddingBottom="@dimen/_5pxv"
+                    android:paddingEnd="@dimen/_30pxh"
+                    android:paddingStart="@dimen/_30pxh"
+                    android:paddingTop="@dimen/_5pxv"
+                    android:singleLine="true"
+                    android:text="@string/lbl_pets"
+                    android:textAllCaps="false"
+                    style="@style/btnSolidRoundedRightCornerOutline" tools:text="@string/lbl_pets"/>
+            </FrameLayout>
+        </LinearLayout>
+        <LinearLayout android:gravity="center_horizontal"
+            android:id="@+id/linearPetShop2"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/_9pxv"
+            android:layout_width="match_parent"
+            android:orientation="vertical" style="@style/groupStyle">
+            <FrameLayout android:id="@+id/frameStackhealthy"
+                android:layout_gravity="start"
+                android:layout_height="@dimen/_173pxv"
+                android:layout_width="@dimen/_154pxh" style="@style/groupStylelight_blue_300_cccornerRadius">
+                <ImageView android:id="@+id/imageImageOne"
+                    android:layout_gravity="center"
+                    android:layout_height="@dimen/_157pxh"
+                    android:layout_marginHorizontal="@dimen/_8pxh"
+                    android:layout_marginVertical="@dimen/_8pxv"
+                    android:layout_width="@dimen/_138pxh"
+                    android:scaleType="fitXY"
+                    cornerRadius="@{@dimen/_16pxh}"
+                    imageRes="@{@drawable/img_image_6}"
+                    tools:ignore="ContentDescription" tools:src="@drawable/img_image_6"/>
+                <androidx.appcompat.widget.AppCompatButton
+                    android:ellipsize="end" android:gravity="center"
+                    android:id="@+id/btnHealthy"
+                    android:layout_gravity="top|start"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="@dimen/_23pxv"
+                    android:layout_marginEnd="@dimen/_10pxh"
+                    android:layout_marginTop="@dimen/_23pxv"
+                    android:layout_width="match_parent"
+                    android:paddingBottom="@dimen/_5pxv"
+                    android:paddingEnd="@dimen/_29pxh"
+                    android:paddingStart="@dimen/_29pxh"
+                    android:paddingTop="@dimen/_5pxv"
+                    android:singleLine="true"
+                    android:text="@string/lbl_healthy"
+                    android:textAllCaps="false"
+                    style="@style/btnSolidRoundedRightCornerOutline" tools:text="@string/lbl_healthy"/>
+            </FrameLayout>
+        </LinearLayout>
+    </LinearLayout>
+</layout>

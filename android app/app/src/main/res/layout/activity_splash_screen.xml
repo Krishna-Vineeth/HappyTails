@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:tools="http://schemas.android.com/tools">
+    <data>
+        <variable name="splashScreenVM" type="com.happytails.app.modules.splashscreen.data.viewmodel.SplashScreenVM"/>
+    </data>
+    <FrameLayout android:id="@+id/frameSplashScreen"
+        android:layout_height="match_parent"
+        android:layout_width="match_parent" style="@style/groupStyleindigo_A100">
+        <ImageView android:id="@+id/imageBackground"
+            android:layout_gravity="start"
+            android:layout_height="@dimen/_887pxv"
+            android:layout_marginTop="@dimen/_3pxv"
+            android:layout_width="match_parent"
+            android:scaleType="fitXY"
+            imageRes="@{@drawable/img_background}"
+            tools:ignore="ContentDescription" tools:src="@drawable/img_background"/>
+        <LinearLayout android:id="@+id/linearColumnlogodesignone"
+            android:layout_gravity="top|center"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="@dimen/_131pxv"
+            android:layout_marginEnd="@dimen/_71pxh"
+            android:layout_marginStart="@dimen/_71pxh"
+            android:layout_marginTop="@dimen/_131pxv"
+            android:layout_width="match_parent" android:orientation="vertical">
+            <ImageView android:gravity="end"
+                android:id="@+id/imageLogodesignOne"
+                android:layout_height="@dimen/_47pxh"
+                android:layout_marginStart="@dimen/_10pxh"
+                android:layout_width="match_parent"
+                android:scaleType="fitXY"
+                android:src="@drawable/img_logodesign1"
+                tools:ignore="ContentDescription" tools:src="@drawable/img_logodesign1"/>
+            <TextView android:gravity="start"
+                android:id="@+id/txtHelpingyouto"
+                android:layout_height="wrap_content"
+                android:layout_marginEnd="@dimen/_10pxh"
+                android:layout_marginTop="@dimen/_47pxv"
+                android:layout_width="match_parent"
+                android:letterSpacing="0.04"
+                android:text="@{splashScreenVM.splashScreenModel.txtHelpingyouto}"
+                style="@style/txtManropesemibold24" tools:text="@string/msg_helping_you_to"/>
+        </LinearLayout>
+    </FrameLayout>
+</layout>

@@ -1,0 +1,158 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:tools="http://schemas.android.com/tools">
+    <data>
+        <variable name="profileHealthCardInsuranceEmptyOneVM" type="com.happytails.app.modules.profilehealthcardinsuranceemptyone.data.viewmodel.ProfileHealthCardInsuranceEmptyOneVM"/>
+    </data>
+    <LinearLayout android:gravity="start"
+        android:id="@+id/linearProfileHealt"
+        android:layout_height="match_parent"
+        android:layout_width="match_parent"
+        android:orientation="vertical" style="@style/groupStylegray_50">
+        <androidx.appcompat.widget.Toolbar
+            android:gravity="center_horizontal"
+            android:id="@+id/toolbarToolbar"
+            android:layout_height="wrap_content"
+            android:layout_marginEnd="@dimen/_41pxh"
+            android:layout_marginStart="@dimen/_41pxh"
+            android:layout_marginTop="@dimen/_12pxv"
+            android:layout_width="match_parent" app:contentInsetStart="0dp">
+            <LinearLayout android:id="@+id/linearNavigationHead"
+                android:layout_height="wrap_content"
+                android:layout_width="match_parent" android:orientation="horizontal">
+                <ImageView android:id="@+id/imageArrowleft"
+                    android:layout_height="@dimen/_10pxh"
+                    android:layout_marginBottom="@dimen/_15pxv"
+                    android:layout_marginStart="@dimen/_4pxh"
+                    android:layout_marginTop="@dimen/_15pxv"
+                    android:layout_width="@dimen/_11pxh"
+                    android:scaleType="centerCrop" circular="@{true}"
+                    imageRes="@{@drawable/img_arrowleft_bluegray_401}"
+                    tools:ignore="ContentDescription" tools:src="@drawable/img_arrowleft_bluegray_401"/>
+                <View android:background="@color/bluegray_50"
+                    android:id="@+id/lineLineDivider"
+                    android:layout_height="@dimen/_22pxv"
+                    android:layout_marginBottom="@dimen/_9pxv"
+                    android:layout_marginStart="@dimen/_12pxh"
+                    android:layout_marginTop="@dimen/_9pxv"
+                    android:layout_weight="0.0" android:layout_width="0dp"/>
+                <LinearLayout android:gravity="start"
+                    android:id="@+id/linearColumnbody"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="@dimen/_7pxh"
+                    android:layout_weight="0.58"
+                    android:layout_width="0dp" android:orientation="vertical">
+                    <TextView android:ellipsize="end"
+                        android:id="@+id/txtBody"
+                        android:layout_height="wrap_content"
+                        android:layout_marginEnd="@dimen/_10pxh"
+                        android:layout_width="wrap_content"
+                        android:lineSpacingExtra="@dimen/_6pxh"
+                        android:singleLine="true"
+                        android:text="@{profileHealthCardInsuranceEmptyOneVM.profileHealthCardInsuranceEmptyOneModel.txtBody}"
+                        style="@style/txtNotoSansnotosansregular14" tools:text="@string/lbl_pet_profile"/>
+                    <TextView android:ellipsize="end"
+                        android:id="@+id/txtTitle"
+                        android:layout_height="wrap_content"
+                        android:layout_marginEnd="@dimen/_10pxh"
+                        android:layout_width="wrap_content"
+                        android:lineSpacingExtra="@dimen/_11pxh"
+                        android:singleLine="true"
+                        android:text="@{profileHealthCardInsuranceEmptyOneVM.profileHealthCardInsuranceEmptyOneModel.txtTitle}"
+                        style="@style/txtCatamaranromansemibold16" tools:text="@string/lbl_insurance"/>
+                </LinearLayout>
+                <LinearLayout android:id="@+id/linearTabUndelineTa"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="@dimen/_7pxh"
+                    android:layout_weight="0.37"
+                    android:layout_width="0dp"
+                    android:orientation="horizontal" style="@style/groupStylebluegray_50cornerRadius">
+                    <ImageView android:id="@+id/imagePhotoPLACEIM"
+                        android:layout_height="@dimen/_20pxh"
+                        android:layout_marginBottom="@dimen/_10pxv"
+                        android:layout_marginStart="@dimen/_14pxh"
+                        android:layout_marginTop="@dimen/_10pxv"
+                        android:layout_width="@dimen/_20pxh"
+                        android:scaleType="centerCrop"
+                        circular="@{true}"
+                        imageRes="@{@drawable/img_photoplaceim_20x20}"
+                        tools:ignore="ContentDescription" tools:src="@drawable/img_photoplaceim_20x20"/>
+                    <TextView android:ellipsize="end"
+                        android:id="@+id/txtText"
+                        android:layout_height="wrap_content"
+                        android:layout_marginBottom="@dimen/_8pxv"
+                        android:layout_marginStart="@dimen/_4pxh"
+                        android:layout_marginTop="@dimen/_11pxv"
+                        android:layout_weight="0.56"
+                        android:layout_width="0dp"
+                        android:lineSpacingExtra="@dimen/_6pxh"
+                        android:singleLine="true"
+                        android:text="@{profileHealthCardInsuranceEmptyOneVM.profileHealthCardInsuranceEmptyOneModel.txtText}"
+                        style="@style/txtNotoSansnotosansmedium14_1" tools:text="@string/lbl_balaji"/>
+                    <ImageView android:id="@+id/imageArrowdown"
+                        android:layout_height="@dimen/_4pxh"
+                        android:layout_marginBottom="@dimen/_17pxv"
+                        android:layout_marginEnd="@dimen/_18pxh"
+                        android:layout_marginStart="@dimen/_8pxh"
+                        android:layout_marginTop="@dimen/_17pxv"
+                        android:layout_width="@dimen/_9pxh"
+                        android:scaleType="fitXY"
+                        android:src="@drawable/img_arrowdown_bluegray_401"
+                        tools:ignore="ContentDescription" tools:src="@drawable/img_arrowdown_bluegray_401"/>
+                </LinearLayout>
+            </LinearLayout>
+        </androidx.appcompat.widget.Toolbar>
+        <View
+            android:background="@drawable/rectangle_gradient_s_bluegray_400_87_e_bluegray_400_87"
+            android:id="@+id/lineLine"
+            android:layout_gravity="center_horizontal"
+            android:layout_height="@dimen/_1pxv"
+            android:layout_marginEnd="@dimen/_41pxh"
+            android:layout_marginStart="@dimen/_41pxh"
+            android:layout_marginTop="@dimen/_14pxv" android:layout_width="@dimen/_327pxh"/>
+        <TextView android:ellipsize="end" android:id="@+id/txtTitleOne"
+            android:layout_height="wrap_content"
+            android:layout_marginEnd="@dimen/_47pxh"
+            android:layout_marginStart="@dimen/_47pxh"
+            android:layout_marginTop="@dimen/_270pxv"
+            android:layout_width="match_parent"
+            android:lineSpacingExtra="@dimen/_20pxh"
+            android:singleLine="true"
+            android:text="@{profileHealthCardInsuranceEmptyOneVM.profileHealthCardInsuranceEmptyOneModel.txtTitleOne}"
+            style="@style/txtPoppinsbold40" tools:text="@string/lbl_coming_soon"/>
+        <TextView android:ellipsize="end" android:id="@+id/txtLanguage"
+            android:layout_gravity="center_horizontal"
+            android:layout_height="wrap_content"
+            android:layout_marginEnd="@dimen/_41pxh"
+            android:layout_marginStart="@dimen/_41pxh"
+            android:layout_width="wrap_content"
+            android:lineSpacingExtra="@dimen/_10pxh"
+            android:singleLine="true"
+            android:text="@{profileHealthCardInsuranceEmptyOneVM.profileHealthCardInsuranceEmptyOneModel.txtLanguage}"
+            style="@style/txtPoppinsmedium20" tools:text="@string/msg_browse_any_othe"/>
+        <LinearLayout android:gravity="center_horizontal"
+            android:id="@+id/linearContainerswith"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="@dimen/_20pxv"
+            android:layout_marginEnd="@dimen/_41pxh"
+            android:layout_marginStart="@dimen/_41pxh"
+            android:layout_marginTop="@dimen/_327pxv"
+            android:layout_width="match_parent"
+            android:orientation="vertical" style="@style/groupStylecornerRadius_7">
+            <androidx.appcompat.widget.AppCompatButton
+                android:ellipsize="end" android:gravity="center"
+                android:id="@+id/btnBrowseMore"
+                android:layout_height="match_parent"
+                android:layout_width="match_parent"
+                android:lineSpacingExtra="@dimen/_6pxh"
+                android:paddingBottom="@dimen/_17pxv"
+                android:paddingEnd="@dimen/_30pxh"
+                android:paddingStart="@dimen/_30pxh"
+                android:paddingTop="@dimen/_17pxv"
+                android:singleLine="true"
+                android:text="@string/lbl_browse_more"
+                android:textAllCaps="false"
+                style="@style/btnSolidRoundedOutline" tools:text="@string/lbl_browse_more"/>
+        </LinearLayout>
+    </LinearLayout>
+</layout>

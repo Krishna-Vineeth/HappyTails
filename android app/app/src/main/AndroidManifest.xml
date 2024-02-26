@@ -1,0 +1,87 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<manifest package="com.happytails.app" xmlns:android="http://schemas.android.com/apk/res/android">
+    <uses-permission android:name="android.permission.INTERNET"/>
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE"/>
+    <application android:allowBackup="false"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name" android:largeHeap="true"
+        android:name="com.happytails.app.appcomponents.di.MyApp"
+        android:roundIcon="@mipmap/ic_launcher_round"
+        android:supportsRtl="true" android:theme="@style/Theme.MyApp" android:usesCleartextTraffic="true">
+        <activity
+            android:name="com.happytails.app.modules.profilehealthcardaddinsurancestep13.ui.ProfileHealthCardAddInsuranceStep13Activity" android:screenOrientation="portrait"/>
+        <activity
+            android:name="com.happytails.app.modules.openscreen.ui.OpenScreenActivity" android:screenOrientation="portrait"/>
+        <activity
+            android:name="com.happytails.app.modules.normalscreen.ui.NormalScreenActivity" android:screenOrientation="portrait"/>
+        <activity
+            android:name="com.happytails.app.modules.trackmapone.ui.TrackMapOneActivity" android:screenOrientation="portrait"/>
+        <activity
+            android:name="com.happytails.app.modules.rewardverification.ui.RewardVerificationActivity" android:screenOrientation="portrait"/>
+        <activity
+            android:name="com.happytails.app.modules.veterinarycontainer.ui.VeterinaryContainerActivity" android:screenOrientation="portrait"/>
+        <activity
+            android:name="com.happytails.app.modules.community.ui.CommunityActivity" android:screenOrientation="portrait"/>
+        <activity
+            android:name="com.happytails.app.modules.pushnotification.ui.PushNotificationActivity" android:screenOrientation="portrait"/>
+        <activity
+            android:name="com.happytails.app.modules.donationinsidescreen.ui.DonationInsideScreenActivity" android:screenOrientation="portrait"/>
+        <activity android:exported="true"
+            android:name="com.happytails.app.modules.splashscreen.ui.SplashScreenActivity" android:screenOrientation="portrait">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN"/>
+                <category android:name="android.intent.category.LAUNCHER"/>
+            </intent-filter>
+        </activity>
+        <activity
+            android:name="com.happytails.app.modules.petinfoone.ui.PetinfoOneActivity" android:screenOrientation="portrait"/>
+        <activity
+            android:name="com.happytails.app.modules.donationscreen.ui.DonationScreenActivity" android:screenOrientation="portrait"/>
+        <activity
+            android:name="com.happytails.app.modules.mainmenu.ui.MainMenuActivity" android:screenOrientation="portrait"/>
+        <activity
+            android:name="com.happytails.app.modules.profilehealthcardinsuranceemptyone.ui.ProfileHealthCardInsuranceEmptyOneActivity" android:screenOrientation="portrait"/>
+        <activity
+            android:name="com.happytails.app.modules.donateone.ui.DonateOneActivity" android:screenOrientation="portrait"/>
+        <activity
+            android:name="com.happytails.app.modules.signup.ui.SignUpActivity" android:screenOrientation="portrait"/>
+        <activity
+            android:name="com.happytails.app.modules.frame280233.ui.Frame280233Activity" android:screenOrientation="portrait"/>
+        <activity
+            android:name="com.happytails.app.modules.petinfo.ui.PetinfoActivity" android:screenOrientation="portrait"/>
+        <activity
+            android:name="com.happytails.app.modules.adoptpet.ui.AdoptPetActivity" android:screenOrientation="portrait"/>
+        <activity
+            android:name="com.happytails.app.modules.profilehealthcardinsuranceempty.ui.ProfileHealthCardInsuranceEmptyActivity" android:screenOrientation="portrait"/>
+        <activity
+            android:name="com.happytails.app.modules.profile.ui.ProfileActivity" android:screenOrientation="portrait"/>
+        <activity
+            android:name="com.happytails.app.modules.profilehealthcard.ui.ProfileHealthCardActivity" android:screenOrientation="portrait"/>
+        <activity
+            android:name="com.happytails.app.modules.launchscreen.ui.LaunchScreenActivity" android:screenOrientation="portrait"/>
+        <activity
+            android:name="com.happytails.app.modules.rewardgranted.ui.RewardGrantedActivity" android:screenOrientation="portrait"/>
+        <activity
+            android:name="com.happytails.app.modules.profilehealthcardinsuranceemptytwo.ui.ProfileHealthCardInsuranceEmptyTwoActivity" android:screenOrientation="portrait"/>
+        <activity
+            android:name="com.happytails.app.modules.achievements.ui.AchievementsActivity" android:screenOrientation="portrait"/>
+        <activity
+            android:name="com.happytails.app.modules.profilehealthcardvaccines.ui.ProfileHealthCardVaccinesActivity" android:screenOrientation="portrait"/>
+        <activity
+            android:name="com.happytails.app.modules.shop.ui.ShopActivity" android:screenOrientation="portrait"/>
+        <activity
+            android:name="com.happytails.app.modules.trackmap.ui.TrackMapActivity" android:screenOrientation="portrait"/>
+        <activity
+            android:name="com.happytails.app.modules.insurance.ui.InsuranceActivity" android:screenOrientation="portrait"/>
+        <activity
+            android:name="com.happytails.app.modules.detaildoctor.ui.DetailDoctorActivity" android:screenOrientation="portrait"/>
+        <activity
+            android:name="com.happytails.app.modules.rewardsystem.ui.RewardSystemActivity" android:screenOrientation="portrait"/>
+        <activity
+            android:name="com.happytails.app.modules.traning.ui.TraningActivity" android:screenOrientation="portrait"/>
+        <activity
+            android:name="com.happytails.app.modules.createaccount.ui.CreateAccountActivity" android:screenOrientation="portrait"/>
+        <activity
+            android:name="com.happytails.app.modules.petcare.ui.PetCareActivity" android:screenOrientation="portrait"/>
+    </application>
+</manifest>

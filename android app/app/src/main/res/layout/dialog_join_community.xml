@@ -1,0 +1,88 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:tools="http://schemas.android.com/tools">
+    <data>
+        <variable name="joinCommunityVM" type="com.happytails.app.modules.joincommunity.data.viewmodel.JoinCommunityVM"/>
+    </data>
+    <LinearLayout android:gravity="center_horizontal"
+        android:id="@+id/linearJoinCommunity"
+        android:layout_height="match_parent"
+        android:layout_width="match_parent" android:orientation="vertical">
+        <LinearLayout android:gravity="center_horizontal"
+            android:id="@+id/linearColumnclose"
+            android:layout_height="match_parent"
+            android:layout_marginBottom="@dimen/_20pxv"
+            android:layout_marginEnd="@dimen/_62pxh"
+            android:layout_marginStart="@dimen/_62pxh"
+            android:layout_marginTop="@dimen/_246pxv"
+            android:layout_width="match_parent"
+            android:orientation="vertical" style="@style/groupStylewhite_15">
+            <FrameLayout android:id="@+id/frameStackclose"
+                android:layout_gravity="center_horizontal"
+                android:layout_height="@dimen/_191pxv"
+                android:layout_marginEnd="@dimen/_17pxh"
+                android:layout_marginStart="@dimen/_17pxh" android:layout_width="@dimen/_251pxh">
+                <ImageView android:id="@+id/imageGroup43image"
+                    android:layout_gravity="start"
+                    android:layout_height="@dimen/_191pxh"
+                    android:layout_width="match_parent"
+                    android:scaleType="fitXY"
+                    cornerRadius="@{@dimen/_23pxh}"
+                    imageRes="@{@drawable/img_group43image}"
+                    tools:ignore="ContentDescription" tools:src="@drawable/img_group43image"/>
+                <ImageView android:id="@+id/imageClose"
+                    android:layout_gravity="top|end"
+                    android:layout_height="@dimen/_12pxh"
+                    android:layout_marginBottom="@dimen/_16pxv"
+                    android:layout_marginEnd="@dimen/_1pxh"
+                    android:layout_marginStart="@dimen/_10pxh"
+                    android:layout_marginTop="@dimen/_16pxv"
+                    android:layout_width="@dimen/_12pxh"
+                    android:scaleType="fitXY"
+                    android:src="@drawable/img_close_bluegray_500"
+                    tools:ignore="ContentDescription" tools:src="@drawable/img_close_bluegray_500"/>
+            </FrameLayout>
+            <TextView android:ellipsize="end"
+                android:gravity="center_horizontal"
+                android:id="@+id/txtLanguage"
+                android:layout_height="wrap_content"
+                android:layout_marginEnd="@dimen/_17pxh"
+                android:layout_marginStart="@dimen/_17pxh"
+                android:layout_marginTop="@dimen/_35pxv"
+                android:layout_width="match_parent"
+                android:letterSpacing="0.03"
+                android:lineSpacingExtra="@dimen/_10pxh"
+                android:singleLine="true"
+                android:text="@{joinCommunityVM.joinCommunityModel.txtLanguage}"
+                style="@style/txtPoppinssemibold20" tools:text="@string/msg_join_a_communit"/>
+            <TextView android:gravity="center_horizontal"
+                android:id="@+id/txtWhatkindofmu"
+                android:layout_height="wrap_content"
+                android:layout_marginEnd="@dimen/_17pxh"
+                android:layout_marginStart="@dimen/_17pxh"
+                android:layout_width="match_parent"
+                android:letterSpacing="0.02"
+                android:lineSpacingExtra="@dimen/_6pxh"
+                android:text="@{joinCommunityVM.joinCommunityModel.txtWhatkindofmu}"
+                style="@style/txtPoppinssemibold14_1" tools:text="@string/msg_join_your_first"/>
+            <androidx.appcompat.widget.AppCompatButton
+                android:ellipsize="end" android:gravity="center"
+                android:id="@+id/btnJoinNow"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="@dimen/_20pxv"
+                android:layout_marginEnd="@dimen/_17pxh"
+                android:layout_marginStart="@dimen/_17pxh"
+                android:layout_marginTop="@dimen/_6pxv"
+                android:layout_width="match_parent"
+                android:letterSpacing="0.02"
+                android:lineSpacingExtra="@dimen/_8pxh"
+                android:paddingBottom="@dimen/_10pxv"
+                android:paddingEnd="@dimen/_30pxh"
+                android:paddingStart="@dimen/_30pxh"
+                android:paddingTop="@dimen/_10pxv"
+                android:singleLine="true"
+                android:text="@string/lbl_join_now"
+                android:textAllCaps="false"
+                style="@style/btnSolidRounded_4" tools:text="@string/lbl_join_now"/>
+        </LinearLayout>
+    </LinearLayout>
+</layout>

@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:tools="http://schemas.android.com/tools">
+    <data>
+        <variable name="listlightbodyRowModel" type="com.happytails.app.modules.rewardverification.data.model.ListlightbodyRowModel"/>
+    </data>
+    <LinearLayout android:id="@+id/linearRowlightbody"
+        android:layout_height="wrap_content"
+        android:layout_width="match_parent" android:orientation="horizontal">
+        <LinearLayout android:gravity="start"
+            android:id="@+id/linearColumnlightbody"
+            android:layout_height="wrap_content"
+            android:layout_weight="0.88" android:layout_width="0dp" android:orientation="vertical">
+            <TextView android:ellipsize="end"
+                android:id="@+id/txtLightBody"
+                android:layout_height="wrap_content"
+                android:layout_marginEnd="@dimen/_10pxh"
+                android:layout_width="wrap_content"
+                android:lineSpacingExtra="@dimen/_6pxh"
+                android:singleLine="true"
+                android:text="@{listlightbodyRowModel.txtLightBody}"
+                style="@style/txtNotoSansnotosansregular14_3" tools:text="@string/lbl_phone"/>
+            <TextView android:ellipsize="end"
+                android:id="@+id/txtMobileNo"
+                android:layout_height="wrap_content"
+                android:layout_marginEnd="@dimen/_10pxh"
+                android:layout_marginTop="@dimen/_4pxv"
+                android:layout_width="wrap_content"
+                android:lineSpacingExtra="@dimen/_6pxh"
+                android:singleLine="true"
+                android:text="@{listlightbodyRowModel.txtMobileNo}"
+                style="@style/txtNotoSansnotosansmedium14_1" tools:text="@string/lbl_9346830134"/>
+        </LinearLayout>
+        <ImageButton
+            android:background="@drawable/layer_list_bg_white_a700_radius_14"
+            android:id="@+id/btnCall"
+            android:layout_height="@dimen/_38pxh"
+            android:layout_marginBottom="@dimen/_3pxv"
+            android:layout_marginTop="@dimen/_3pxv"
+            android:layout_width="@dimen/_38pxh"
+            android:paddingHorizontal="@dimen/_11pxh"
+            android:paddingVertical="@dimen/_11pxv"
+            android:scaleType="fitCenter"
+            android:src="@drawable/img_call" tools:ignore="ContentDescription"/>
+    </LinearLayout>
+</layout>

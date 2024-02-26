@@ -1,0 +1,76 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:tools="http://schemas.android.com/tools">
+    <data>
+        <variable name="listrectangleseventyRowModel" type="com.happytails.app.modules.donationinsidescreen.data.model.ListrectangleseventyRowModel"/>
+    </data>
+    <LinearLayout android:id="@+id/linearRowrectangleseventy"
+        android:layout_height="wrap_content"
+        android:layout_width="match_parent"
+        android:orientation="horizontal" style="@style/groupStylewhite_18">
+        <ImageView android:id="@+id/imageRectangleSeventy"
+            android:layout_height="@dimen/_90pxh"
+            android:layout_marginBottom="@dimen/_5pxv"
+            android:layout_marginStart="@dimen/_5pxh"
+            android:layout_marginTop="@dimen/_5pxv"
+            android:layout_width="@dimen/_90pxh"
+            android:scaleType="fitXY"
+            imageRes="@{@drawable/img_rectangle70_3}"
+            tools:ignore="ContentDescription" tools:src="@drawable/img_rectangle70_3"/>
+        <LinearLayout android:gravity="start"
+            android:id="@+id/linearColumncapacitybuildi"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="@dimen/_9pxv"
+            android:layout_marginEnd="@dimen/_5pxh"
+            android:layout_marginStart="@dimen/_10pxh"
+            android:layout_marginTop="@dimen/_9pxv"
+            android:layout_weight="0.71" android:layout_width="0dp" android:orientation="vertical">
+            <TextView android:gravity="center_horizontal"
+                android:id="@+id/txtCapacityBuildi"
+                android:layout_height="wrap_content"
+                android:layout_marginEnd="@dimen/_2pxh"
+                android:layout_marginTop="@dimen/_1pxv"
+                android:layout_width="match_parent"
+                android:lineSpacingExtra="@dimen/_6pxh"
+                android:text="@{listrectangleseventyRowModel.txtCapacityBuildi}"
+                style="@style/txtInterbold14" tools:text="@string/msg_capacity_buildi"/>
+            <TextView android:ellipsize="end" android:id="@+id/txtPrice"
+                android:layout_height="wrap_content"
+                android:layout_marginEnd="@dimen/_10pxh"
+                android:layout_marginTop="@dimen/_3pxv"
+                android:layout_width="wrap_content"
+                android:lineSpacingExtra="@dimen/_3pxh"
+                android:singleLine="true"
+                android:text="@{listrectangleseventyRowModel.txtPrice}"
+                style="@style/txtIntermedium12" tools:text="@string/lbl_85000"/>
+            <LinearLayout android:gravity="start"
+                android:id="@+id/linearRowviewsprogresOne"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="@dimen/_1pxv"
+                android:layout_marginEnd="@dimen/_10pxh"
+                android:layout_marginTop="@dimen/_6pxv"
+                android:layout_width="match_parent" android:orientation="horizontal">
+                <ProgressBar
+                    android:id="@+id/progressBarViewsProgresOne"
+                    android:indeterminate="false"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="@dimen/_1pxv"
+                    android:layout_marginTop="@dimen/_2pxv"
+                    android:layout_weight="0.88"
+                    android:layout_width="0dp" android:max="100"
+                    android:minHeight="@dimen/_11pxv"
+                    android:progress="60"
+                    android:progressDrawable="@drawable/layer_list_bg_gray_304_radius_5_5" style="@style/Widget.AppCompat.ProgressBar.Horizontal"/>
+                <TextView android:ellipsize="end"
+                    android:id="@+id/txtFiftyFive"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="@dimen/_6pxh"
+                    android:layout_weight="0.12"
+                    android:layout_width="0dp"
+                    android:lineSpacingExtra="@dimen/_3pxh"
+                    android:singleLine="true"
+                    android:text="@{listrectangleseventyRowModel.txtFiftyFive}"
+                    style="@style/txtInterregular12" tools:text="@string/lbl_55"/>
+            </LinearLayout>
+        </LinearLayout>
+    </LinearLayout>
+</layout>

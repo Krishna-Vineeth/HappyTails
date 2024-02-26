@@ -1,0 +1,197 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:tools="http://schemas.android.com/tools">
+    <data>
+        <variable name="createAccountVM" type="com.happytails.app.modules.createaccount.data.viewmodel.CreateAccountVM"/>
+    </data>
+    <LinearLayout android:gravity="center_horizontal"
+        android:id="@+id/linearCreateAccount"
+        android:layout_height="match_parent"
+        android:layout_width="match_parent"
+        android:orientation="vertical" style="@style/groupStyle_1">
+        <FrameLayout android:id="@+id/frameActionSheetCo"
+            android:layout_gravity="center_horizontal"
+            android:layout_height="@dimen/_554pxv"
+            android:layout_marginEnd="@dimen/_17pxh"
+            android:layout_marginStart="@dimen/_17pxh"
+            android:layout_marginTop="@dimen/_290pxv"
+            android:layout_width="@dimen/_375pxh" style="@style/groupStyle_2">
+            <LinearLayout android:id="@+id/linearActionSheet"
+                android:layout_gravity="start"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/_8pxv"
+                android:layout_width="match_parent" android:orientation="vertical">
+                <ImageButton
+                    android:background="@drawable/rectangle_border_blue_50_radius_32"
+                    android:id="@+id/btnLock"
+                    android:layout_gravity="center_horizontal"
+                    android:layout_height="@dimen/_64pxh"
+                    android:layout_marginEnd="@dimen/_155pxh"
+                    android:layout_marginStart="@dimen/_155pxh"
+                    android:layout_width="@dimen/_64pxh"
+                    android:paddingHorizontal="@dimen/_18pxh"
+                    android:paddingVertical="@dimen/_18pxv"
+                    android:scaleType="fitCenter"
+                    android:src="@drawable/img_lock" tools:ignore="ContentDescription"/>
+                <LinearLayout android:gravity="center_horizontal"
+                    android:id="@+id/linearActionSheet1"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="@dimen/_36pxv"
+                    android:layout_width="match_parent"
+                    android:orientation="vertical" style="@style/groupStylecornerRadius_1">
+                    <TextView android:ellipsize="end"
+                        android:id="@+id/txtTitle"
+                        android:layout_gravity="center_horizontal"
+                        android:layout_height="wrap_content"
+                        android:layout_marginEnd="@dimen/_24pxh"
+                        android:layout_marginStart="@dimen/_24pxh"
+                        android:layout_marginTop="@dimen/_24pxv"
+                        android:layout_width="wrap_content"
+                        android:lineSpacingExtra="@dimen/_17pxh"
+                        android:singleLine="true"
+                        android:text="@{createAccountVM.createAccountModel.txtTitle}"
+                        style="@style/txtCatamaranbold26" tools:text="@string/lbl_login"/>
+                    <TextView android:gravity="center_horizontal"
+                        android:id="@+id/txtBody"
+                        android:layout_height="wrap_content"
+                        android:layout_marginEnd="@dimen/_24pxh"
+                        android:layout_marginStart="@dimen/_24pxh"
+                        android:layout_marginTop="@dimen/_5pxv"
+                        android:layout_width="match_parent"
+                        android:lineSpacingExtra="@dimen/_8pxh"
+                        android:text="@{createAccountVM.createAccountModel.txtBody}"
+                        style="@style/txtNotoSansnotosansmedium16" tools:text="@string/msg_welcome_please"/>
+                    <LinearLayout android:gravity="center_horizontal"
+                        android:id="@+id/linearInputBox"
+                        android:layout_height="wrap_content"
+                        android:layout_marginEnd="@dimen/_24pxh"
+                        android:layout_marginStart="@dimen/_24pxh"
+                        android:layout_marginTop="@dimen/_21pxv"
+                        android:layout_width="match_parent"
+                        android:orientation="vertical" style="@style/groupStylecornerRadius_2">
+                        <LinearLayout
+                            android:gravity="center_horizontal"
+                            android:id="@+id/linearInputContent"
+                            android:layout_height="match_parent"
+                            android:layout_width="match_parent"
+                            android:orientation="vertical" style="@style/groupStylewhite_6">
+                            <TextView android:ellipsize="end"
+                                android:gravity="start"
+                                android:id="@+id/txtLabel"
+                                android:layout_height="match_parent"
+                                android:layout_marginHorizontal="@dimen/_16pxh"
+                                android:layout_marginVertical="@dimen/_16pxv"
+                                android:layout_width="match_parent"
+                                android:lineSpacingExtra="@dimen/_6pxh"
+                                android:singleLine="true"
+                                android:text="@{createAccountVM.createAccountModel.txtLabel}"
+                                style="@style/txtNotoSansnotosansregular16" tools:text="@string/lbl_your_email"/>
+                        </LinearLayout>
+                    </LinearLayout>
+                    <LinearLayout android:gravity="center_horizontal"
+                        android:id="@+id/linearInputBox1"
+                        android:layout_height="wrap_content"
+                        android:layout_marginEnd="@dimen/_24pxh"
+                        android:layout_marginStart="@dimen/_24pxh"
+                        android:layout_marginTop="@dimen/_16pxv"
+                        android:layout_width="match_parent"
+                        android:orientation="vertical" style="@style/groupStylecornerRadius_2">
+                        <LinearLayout android:id="@+id/linearContent"
+                            android:layout_height="match_parent"
+                            android:layout_width="match_parent"
+                            android:orientation="horizontal" style="@style/groupStylewhite_6">
+                            <TextView android:ellipsize="end"
+                                android:id="@+id/txtLabelOne"
+                                android:layout_height="wrap_content"
+                                android:layout_marginBottom="@dimen/_16pxv"
+                                android:layout_marginStart="@dimen/_16pxh"
+                                android:layout_marginTop="@dimen/_16pxv"
+                                android:layout_weight="0.81"
+                                android:layout_width="0dp"
+                                android:lineSpacingExtra="@dimen/_6pxh"
+                                android:singleLine="true"
+                                android:text="@{createAccountVM.createAccountModel.txtLabelOne}"
+                                style="@style/txtNotoSansnotosansregular16" tools:text="@string/lbl_password"/>
+                            <ImageView android:id="@+id/imageEye"
+                                android:layout_height="@dimen/_11pxh"
+                                android:layout_marginBottom="@dimen/_21pxv"
+                                android:layout_marginEnd="@dimen/_17pxh"
+                                android:layout_marginStart="@dimen/_204pxh"
+                                android:layout_marginTop="@dimen/_21pxv"
+                                android:layout_width="@dimen/_16pxh"
+                                android:scaleType="fitXY"
+                                android:src="@drawable/img_eye"
+                                tools:ignore="ContentDescription" tools:src="@drawable/img_eye"/>
+                        </LinearLayout>
+                    </LinearLayout>
+                    <androidx.appcompat.widget.AppCompatCheckBox
+                        android:buttonTint="@color/bluegray_102"
+                        android:ellipsize="end"
+                        android:fontFamily="@font/noto_sans"
+                        android:id="@+id/checkBoxText"
+                        android:layout_gravity="start"
+                        android:layout_height="wrap_content"
+                        android:layout_marginEnd="@dimen/_28pxh"
+                        android:layout_marginStart="@dimen/_28pxh"
+                        android:layout_marginTop="@dimen/_16pxv"
+                        android:layout_width="wrap_content"
+                        android:lineSpacingExtra="@dimen/_6pxh"
+                        android:paddingStart="@dimen/_8pxh"
+                        android:singleLine="true"
+                        android:text="@string/msg_accept_terms_an"
+                        android:textColor="@color/bluegray_401"
+                        android:textFontWeight="400"
+                        android:textSize="@dimen/_14pxh"
+                        android:textStyle="bold" tools:text="@string/msg_accept_terms_an"/>
+                    <LinearLayout android:gravity="center_horizontal"
+                        android:id="@+id/linearPrimaryButton"
+                        android:layout_height="wrap_content"
+                        android:layout_marginEnd="@dimen/_24pxh"
+                        android:layout_marginStart="@dimen/_24pxh"
+                        android:layout_marginTop="@dimen/_48pxv"
+                        android:layout_width="match_parent"
+                        android:orientation="vertical" style="@style/groupStylelight_blue_3">
+                        <TextView android:ellipsize="end"
+                            android:gravity="center_horizontal"
+                            android:id="@+id/txtButton"
+                            android:layout_height="match_parent"
+                            android:layout_marginBottom="@dimen/_17pxv"
+                            android:layout_marginEnd="@dimen/_108pxh"
+                            android:layout_marginStart="@dimen/_108pxh"
+                            android:layout_marginTop="@dimen/_17pxv"
+                            android:layout_width="match_parent"
+                            android:lineSpacingExtra="@dimen/_6pxh"
+                            android:singleLine="true"
+                            android:text="@{createAccountVM.createAccountModel.txtButton}"
+                            style="@style/txtPoppinsmedium14_2" tools:text="@string/lbl_create_account"/>
+                    </LinearLayout>
+                    <LinearLayout android:gravity="center_horizontal"
+                        android:id="@+id/linearSecondaryButto"
+                        android:layout_height="wrap_content"
+                        android:layout_marginBottom="@dimen/_9pxv"
+                        android:layout_marginEnd="@dimen/_24pxh"
+                        android:layout_marginStart="@dimen/_24pxh"
+                        android:layout_marginTop="@dimen/_17pxv"
+                        android:layout_width="wrap_content"
+                        android:orientation="vertical" style="@style/groupStylecornerRadius_3">
+                        <TextView android:ellipsize="end"
+                            android:gravity="start"
+                            android:id="@+id/txtLanguage"
+                            android:layout_height="match_parent"
+                            android:layout_width="match_parent"
+                            android:lineSpacingExtra="@dimen/_6pxh"
+                            android:singleLine="true"
+                            android:text="@{createAccountVM.createAccountModel.txtLanguage}"
+                            style="@style/txtNotoSansnotosansmedium14" tools:text="@string/msg_creating_new_ac"/>
+                    </LinearLayout>
+                </LinearLayout>
+            </LinearLayout>
+            <ImageView android:id="@+id/imageActionSheetBa"
+                android:layout_gravity="start"
+                android:layout_height="match_parent"
+                android:layout_width="match_parent"
+                android:scaleType="fitXY"
+                android:src="@drawable/img_actionsheetba"
+                tools:ignore="ContentDescription" tools:src="@drawable/img_actionsheetba"/>
+        </FrameLayout>
+    </LinearLayout>
+</layout>

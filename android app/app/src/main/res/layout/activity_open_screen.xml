@@ -1,0 +1,79 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:tools="http://schemas.android.com/tools">
+    <data>
+        <variable name="openScreenVM" type="com.happytails.app.modules.openscreen.data.viewmodel.OpenScreenVM"/>
+    </data>
+    <FrameLayout android:id="@+id/frameOpenScreen"
+        android:layout_height="match_parent"
+        android:layout_width="match_parent" style="@style/groupStylewhite_4">
+        <ImageView android:id="@+id/imageImage"
+            android:layout_gravity="top|start"
+            android:layout_height="@dimen/_563pxv"
+            android:layout_marginBottom="@dimen/_10pxv"
+            android:layout_width="match_parent"
+            android:scaleType="fitXY"
+            imageRes="@{@drawable/img_image_563x410}"
+            tools:ignore="ContentDescription" tools:src="@drawable/img_image_563x410"/>
+        <LinearLayout android:id="@+id/linearDescriptioncar"
+            android:layout_gravity="bottom|start"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/_10pxv"
+            android:layout_width="match_parent"
+            android:orientation="vertical" style="@style/groupStylewhite_5">
+
+            <com.asksira.loopingviewpager.indicator.CustomShapePagerIndicator
+                android:id="@+id/indicatorSettings"
+                android:layout_gravity="center_horizontal"
+                android:layout_height="wrap_content"
+                android:layout_marginEnd="@dimen/_29pxh"
+                android:layout_marginStart="@dimen/_29pxh"
+                android:layout_marginTop="@dimen/_43pxv"
+                android:layout_width="wrap_content"
+                app:drawable_selected="@drawable/indicator_selected_bg_light_blue_300_radius_8"
+                app:indicator_size="@dimen/_17pxh" app:indicator_spacing="@dimen/_8pxh"/>
+            <TextView android:gravity="center_horizontal"
+                android:id="@+id/txtPetCareInYou"
+                android:layout_height="wrap_content"
+                android:layout_marginEnd="@dimen/_29pxh"
+                android:layout_marginStart="@dimen/_29pxh"
+                android:layout_marginTop="@dimen/_28pxv"
+                android:layout_width="match_parent"
+                android:text="@{openScreenVM.openScreenModel.txtPetCareInYou}"
+                style="@style/txtPoppinsbold26" tools:text="@string/msg_pet_care_in_you"/>
+            <TextView android:gravity="center_horizontal"
+                android:id="@+id/txtConnectwithFive"
+                android:layout_height="wrap_content"
+                android:layout_marginEnd="@dimen/_29pxh"
+                android:layout_marginStart="@dimen/_29pxh"
+                android:layout_marginTop="@dimen/_3pxv"
+                android:layout_width="match_parent"
+                android:text="@{openScreenVM.openScreenModel.txtConnectwithFive}"
+                style="@style/txtPoppinsregular17" tools:text="@string/msg_connect_with_5"/>
+            <LinearLayout android:gravity="center_horizontal"
+                android:id="@+id/linearColumngetStarted"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/_26pxv"
+                android:layout_width="match_parent"
+                android:orientation="vertical" style="@style/groupStylewhite_A700">
+                <androidx.appcompat.widget.AppCompatButton
+                    android:ellipsize="end" android:gravity="center"
+                    android:id="@+id/btnGetStarted"
+                    android:layout_height="match_parent"
+                    android:layout_marginBottom="@dimen/_20pxv"
+                    android:layout_marginEnd="@dimen/_21pxh"
+                    android:layout_marginStart="@dimen/_21pxh"
+                    android:layout_marginTop="@dimen/_17pxv"
+                    android:layout_width="match_parent"
+                    android:paddingBottom="@dimen/_15pxv"
+                    android:paddingEnd="@dimen/_30pxh"
+                    android:paddingStart="@dimen/_30pxh"
+                    android:paddingTop="@dimen/_15pxv"
+                    android:singleLine="true"
+                    android:text="@string/lbl_get_started"
+                    android:textAllCaps="false"
+                    style="@style/btnSolidRounded_1" tools:text="@string/lbl_get_started"/>
+            </LinearLayout>
+        </LinearLayout>
+    </FrameLayout>
+</layout>
